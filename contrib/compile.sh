@@ -145,12 +145,12 @@ then
 	# Install parser
 	PARSER_DIR=${OUTPUT_DIR}/parser
 	install -d ${PARSER_DIR}
-	install -m 755 ${OUTPUT_DIR}/out/lib/libasn1c.so           ${PARSER_DIR}/libasn1c.so
-	install -m 755 ${OUTPUT_DIR}/out/lib/libosmo-asn1-rrc.so.0 ${PARSER_DIR}/libosmo-asn1-rrc.so
-	install -m 755 ${OUTPUT_DIR}/out/lib/libosmocore.so.5      ${PARSER_DIR}/libosmocore.so
-	install -m 755 ${OUTPUT_DIR}/out/lib/libosmogsm.so.5       ${PARSER_DIR}/libosmogsm.so
-	install -m 755 ${OUTPUT_DIR}/out/gsm-parser/diag_import       ${PARSER_DIR}/libdiag_import.so
-	install -m 755 ${OUTPUT_DIR}/out/gsm-parser/libcompat.so      ${PARSER_DIR}/libcompat.so
+	install -m 755 ${OUTPUT_DIR}/out/lib/libasn1c.so         ${PARSER_DIR}/libasn1c.so
+	install -m 755 ${OUTPUT_DIR}/out/lib/libosmo-asn1-rrc.so ${PARSER_DIR}/libosmo-asn1-rrc.so
+	install -m 755 ${OUTPUT_DIR}/out/lib/libosmocore.so      ${PARSER_DIR}/libosmocore.so
+	install -m 755 ${OUTPUT_DIR}/out/lib/libosmogsm.so       ${PARSER_DIR}/libosmogsm.so
+	install -m 755 ${OUTPUT_DIR}/out/gsm-parser/diag_import  ${PARSER_DIR}/libdiag_import.so
+	install -m 755 ${OUTPUT_DIR}/out/gsm-parser/libcompat.so ${PARSER_DIR}/libcompat.so
 
 	install -m 644 ${OUTPUT_DIR}/out/gsm-parser/sm_2g.sql    ${PARSER_DIR}/sm_2g.sql
 	install -m 644 ${OUTPUT_DIR}/out/gsm-parser/sm_3g.sql    ${PARSER_DIR}/sm_3g.sql
